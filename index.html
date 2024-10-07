@@ -429,6 +429,101 @@ puppet_agent::version: 'auto'
 
 ---
 
+.left-column[
+## PE Tuning
+]
+
+.right-column[
+
+
+```yaml
+puppet_enterprise::profile::agent::package_inventory_enabled: true
+```
+
+]
+<a href='https://betadots.de' alt='company website betadots'><img src="logo-1181x1181.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+* puts pressure on PuppetDB
+* allows you to see installed packages in PE Console
+
+---
+
+.left-column[
+## PE Tuning
+]
+
+.right-column[
+
+
+```yaml
+puppet_enterprise::profile::agent::package_inventory_enabled: true
+```
+
+]
+<a href='https://betadots.de' alt='company website betadots'><img src="logo-1181x1181.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+
+---
+
+.left-column[
+## PE Tuning
+]
+
+.right-column[
+
+```
+curl --cert "$cert" --cacert "$cacert" --key "$key" "https://$(puppet config print server):4433/classifier-api/v1/nodes"
+```
+
+```
+[]
+```
+
+
+
+```yaml
+puppet_enterprise::profile::console::classifier_node_check_in_storage: true
+```
+
+* history of all classifier calls for a all nodes (every time the agent runs)
+* used node groups
+* classifier data for this node
+
+* "https://$(puppet config print server):4433/classifier-api/v1/nodes/$(hostname -f)"
+* just one node
+]
+<a href='https://betadots.de' alt='company website betadots'><img src="logo-1181x1181.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+
+---
+
+.left-column[
+## PE Tuning
+]
+
+.right-column[
+
+PXP tuning/logging
+]
+<a href='https://betadots.de' alt='company website betadots'><img src="logo-1181x1181.png" alt="drawing" style="position: fixed; bottom: 12px; left: 20px; width: 100px;"/></a>
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+
+---
+
+
+
 
 
 
